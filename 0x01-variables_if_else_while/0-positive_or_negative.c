@@ -3,10 +3,9 @@
 #include <stdio.h>
 
 /**
- * betty stle doc
  * main - main function
- * program: assign a random number to the n variable and print the number
- * Return: 0 (success)
+ * Description: A rand # is assigned to the n variable & print the number
+ * Return: 0
  */
 int main(void)
 {
