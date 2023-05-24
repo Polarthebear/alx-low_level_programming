@@ -9,9 +9,9 @@
  */
 int _abs(int c)
 {
-	while (c >= '0')
+	if (c >= 0)
 	{
-		_putchar("%d\n", c);
-		return (0);
+		return (c);
 	}
+	return (-c);
 }
