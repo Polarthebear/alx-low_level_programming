@@ -2,20 +2,23 @@
 
 /**
  * print_line - main entry point
- * @n: = print_line
+ * @n: n variable
  * Description: print '_' for each number of n
  */
 void print_line(int n)
 {
-	char print_line = 'n';
-
-	while (print_line == 'n')
+	if (n <= 0)
 	{
-		if (print_line != 0 || print_line > 0)
+		_putchar("\n");
+	}
+	else
+	{
+		int pl;
+
+		for (pl > 1; pl <= n; pl++)
 		{
 			_putchar("_");
 		}
 		_putchar("\n");
 	}
-	_putchar("\n");
 }
