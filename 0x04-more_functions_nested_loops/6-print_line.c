@@ -9,16 +9,16 @@ void print_line(int n)
 {
 	if (n <= 0)
 	{
-		_putchar("\n");
+		_putchar('\n');
 	}
 	else
 	{
-		int pl;
+		int i;
 
-		for (pl > 1; pl <= n; pl++)
+		for (i > 1; i <= n; i++)
 		{
-			_putchar("_");
+			_putchar('_');
 		}
-		_putchar("\n");
+		_putchar('\n');
 	}
 }
