@@ -2,25 +2,20 @@
 
 /**
  * more_numbers - main entry point
- * Description: Function that prints 0 to 14 10 times
+ * Description: prints 0 to 14, 10 times
  */
 void more_numbers(void)
 {
-	int times, digit;
+	int t, d;
 
-	int times = '0';
-
-	while (times < '10')
+	for (t = 0; t < 10; t++)
 	{
-		int digit = '0';
-
-		while (digit < '15')
+		for (d = 0; d <= 14 ; d++)
 		{
-			_putchar(digit);
-			digit++;
+			if (d >= 10)
+				_putchar(d / 10 + '0');
+			_putchar(d % 10 + '0');
 		}
-	_putchar(times);
-	times++;
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
