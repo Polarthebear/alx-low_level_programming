@@ -6,13 +6,15 @@
  */
 void more_numbers(void)
 {
-	long int times = '0';
+	int times, digit;
 
-	while (times <= '10')
+	int times = '0';
+
+	while (times < '10')
 	{
-		long int digit = '0';
+		int digit = '0';
 
-		while (digit <= '14')
+		while (digit < '15')
 		{
 			_putchar(digit);
 			digit++;
