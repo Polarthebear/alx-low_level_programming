@@ -3,7 +3,7 @@
 /**
  * print_line - main entry point
  * @n: n variable
- * Description: print '_' for each number of n
+ * Description: print straight line in the terminal
  */
 void print_line(int n)
 {
