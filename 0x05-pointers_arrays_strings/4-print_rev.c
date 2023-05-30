@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * print_rev - main entry point
@@ -14,7 +15,7 @@ void print_rev(char *s)
 	{
 		while (*s != '\0')
 		{
-			_putchar(*s++);
+			_putchar(strrev(*s++));
 		}
 		_putchar('\n');
 	}
