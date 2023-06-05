@@ -2,8 +2,8 @@
 
 /**
  * _strchr - main entry point
- * @s - char to be checked
- * @c - char to be located
+ * @s: char to be checked
+ * @c: char to be located
  * Description: Function that locates a char in a string
  * Return: 0
  */
