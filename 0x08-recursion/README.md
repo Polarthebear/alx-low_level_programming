@@ -1,13 +1,15 @@
 ## Project Title
 **0x08-recursion**
 
-## Required Taskss
+## Required Tasks
 **General**
 
 * *What is recursion*
 * *How to implement recursion*
 * *In what situations you should implement recursion*
 * *In what situations you shouldn’t implement recursion*
+
+##
 
 * **0. She locked away a secret, deep inside herself, something she once knew to be true... but chose to forget** - Write a function that prints a string, followed by a new line. - `0-puts_recursion.c`
 * **1. Why is it so important to dream? Because, in my dreams we are together** - Write a function that prints a string in reverse. - `1-print_rev_recursion.c`
