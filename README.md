@@ -6,7 +6,7 @@
 
 **This is a list of all the directories**
 
-* `0x00-hello_world` - Why C programming is awesome.
+* [0x00-hello_world](https://github.com/Polarthebear/alx-low_level_programming/tree/master/0x00-hello_world) - Why C programming is awesome.
 * `0x01-variables_if_else_while` - What are the arithmetic operators and how to use them?
 * `0x02-functions_nested_loops` - What are nested loops and how to use them?
 * `0x03-debugging` - What is debugging?
