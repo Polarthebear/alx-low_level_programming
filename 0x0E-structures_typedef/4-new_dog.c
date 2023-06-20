@@ -19,9 +19,9 @@ int _strlen(const char *str)
  * _strcpy - main entry point
  * @src: source
  * @dest: destination
- * Return: dest where it was copied
+ * Return: @dest
  */
-char *_strcpy(char *dest char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i;
 
