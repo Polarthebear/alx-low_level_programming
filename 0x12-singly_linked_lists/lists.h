@@ -2,7 +2,7 @@
 #define lists_h
 
 /**
- * struct lists_s - main entry point
+ * struct list_s - main entry point
  * @str: string
  * @next: next node
  * @len: string length
