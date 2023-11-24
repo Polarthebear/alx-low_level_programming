@@ -1,9 +1,9 @@
-#include "bitman.h"
+#include "main.h"
 
 /**
  * binary_to_uint - Covert number to unsigned int from binary
  * @b: string with binary num
- * return: unsigned int
+ * Return: unsigned int
  */
 unsigned int binary_to_uint(const char *b)
 {
@@ -12,7 +12,7 @@ unsigned int binary_to_uint(const char *b)
 
 	if (!b)
 	{
-		retrun (0);
+		return (0);
 	}
 	for (i; b[i]; i++)
 	{
