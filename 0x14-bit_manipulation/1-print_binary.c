@@ -11,11 +11,12 @@ void print_binary(unsigned long int n)
 
 	for (i = 63; i >= 0; i--)
 	{
-		c = n >> i;
+		now = n >> i;
+		
 
-		if (c & 1)
+		if (now & 1)
 		{
-			_putchar('1);
+			_putchar('1');
 			c++;
 		}
 		else if (c)
