@@ -8,13 +8,13 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int deci = 0;
-	int i = 0;
+	int i;
 
 	if (!b)
 	{
 		return (0);
 	}
-	for (i; b[i]; i++)
+	for (i = 0; b[i]; i++)
 	{
 		if (b[i] < '0' || b[i] > '1')
 		{
