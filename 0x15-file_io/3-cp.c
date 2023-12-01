@@ -2,16 +2,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void close(int fd);
-char *make_buff(char *file);
-
 /**
- * make_buffer - Main entry point
+ * create_buff - Main entry point
  * Description: allocate bytes (1024) for buffer
  * @file: name of buffer
  * Return: pointer to allocated buffer
  */
-char *make_buffer(char *file)
+char *create_buff(char *file)
 {
 	char *buff;
 
@@ -19,25 +16,27 @@ char *make_buffer(char *file)
 
 	if (buff == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
+		dprintf(STDERR_FILENO, 
+				"Error: Can't write to %s\n", file);
 		exit(99);
 	}
 	return (buff);
 }
 
 /**
- * close - Main entry point
+ * close_file - Main entry point
  * @fd: file descriptor that must be closed
  */
-void close(int fd)
+void close_file(int fd)
 {
-	int c;
+	int cl;
 
-	c = close(fd);
+	cl = close(fd);
 
-	if (c == -1)
+	if (cl == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, 
+				"Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }
@@ -61,7 +60,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
-	buff = make_buffer(argv[2]);
+	buff = create_buff(argv[2]);
 	from = open(argv[1], O_RDONLY);
 	r = read(from, buff, 1024);
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
@@ -69,7 +68,8 @@ int main(int argc, char *argv[])
 	do {
 		if (from == -1 || r == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			dprintf(STDERR_FILENO, "
+					Error: Can't read from file %s\n", argv[1]);
 			free(buff);
 			exit(98);
 		}
@@ -77,7 +77,8 @@ int main(int argc, char *argv[])
 		w = write(to, buff, r);
 		if (to == -1 || w == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, 
+					"Error: Can't write to %s\n", argv[2]);
 			free(buff);
 			exit(99);
 		}
@@ -87,8 +88,8 @@ int main(int argc, char *argv[])
 	} while (r > 0);
 
 	free(buff);
-	close(from);
-	close(to);
+	close_file(from);
+	close_file(to);
 
 	return (0);
 }
