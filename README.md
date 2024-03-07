@@ -27,3 +27,6 @@
 * [`0x13-more_singly_linked_lists`](https://github.com/Polarthebear/alx-low_level_programming/blob/master/0x13-more_singly_linked_lists/README.md) - How to use linked lists
 * [`0x14-bit_manipulation`](https://github.com/Polarthebear/alx-low_level_programming/blob/master/0x14-bit_manipulation/README.md) - How to manipulate bits and use bitwise operators
 * [`0x15-file_io`](https://github.com/Polarthebear/alx-low_level_programming/blob/master/0x15-file_io/README.md) - How to create, open, close, read and write files.
+* [`0x17-doubly_linked_lists`](https://github.com/Polarthebear/alx-low_level_programming/blob/master/0x17-doubly_linked_lists/README.md) - How to use doubly linked lists.
+* [`0x18. C - Dynamic libraries`](https://github.com/Polarthebear/alx-low_level_programming/blob/master/0x18-dynamic_libraries/README.md) - What is a dynamic library, how does it work, how to create one, and how to use it
+* [`0x1A. C - Hash tables`](https://github.com/Polarthebear/alx-low_level_programming/blob/master/0x1A-hash_tables/README.md) - What is a hash table, how do they work and how to use them.
